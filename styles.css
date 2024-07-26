@@ -1,0 +1,192 @@
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.9rem;
+    background-color: hsl(210, 60%, 98%);
+    /*background-color: black;*/
+    margin: 0;
+}
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.main-box{
+    /*width: 63%;*/
+    width: 50%;
+    padding: 1% 3%;
+    background-color: white;
+    border-radius: 15px;   
+}
+.notifications-box{
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+#notifications-heading{
+    display: inline-block;
+    /*border: 1px solid black;*/
+}
+.notifications-number{
+    /*border: 1px solid black;*/
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 20%;
+    margin-left: 1rem;
+}
+.mark-box{
+    display: inline-block;
+    /*border: 1px solid black;*/
+    color:  hsl(219, 12%, 42%);
+}
+.mark-box:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+.notifications-box-inner{
+    display: flex;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+
+.not-box-1{
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    background-color:  hsl(210, 60%, 98%);
+    border-radius: 10px;
+    padding: 0 1.5%;
+    margin-bottom: 10px;
+}
+.profile-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+/*.not-1-para{
+    display: inline-block;
+    margin-left: 2rem;
+}*/
+.action-box{
+    /*border: 1px solid black;*/
+    margin-left: 25px;
+}
+.time-para{
+    margin-top: 3px;
+    color: hsl(219, 12%, 42%);
+}
+.action-para{
+    margin-bottom: 0;
+    margin-top: 18px;
+}
+.not-circle{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 18px;
+}
+
+.read-box-1{
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 1.5%;
+}
+.private-message{
+    border: 1px solid hsl(219, 14%, 63%);
+    margin-left: 104px;
+    padding: 1%;
+    border-radius: 5px;
+}
+.private-message p{
+    color: hsl(219, 12%, 42%);
+}
+
+.your-picture{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10%;
+    /*margin-left: 46%;*/
+}
+.imp-1{
+    color: hsl(219, 12%, 42%);
+    font-weight: bold;
+}
+.imp-2{
+    color: hsl(219, 85%, 26%);
+    font-weight: bold;
+}
+
+/* for active states */
+.username:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+.imp-2:hover{
+    cursor: pointer;
+}
+.private-message:hover{
+    cursor: pointer;
+    background-color: hsl(210, 60%, 98%);
+}
+.your-picture:hover{
+    cursor: pointer;
+}
+
+
+/* media queries for responsive design */
+@media screen and (max-width: 810px) {
+    .main-box{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: white;
+    }
+    .main-box{
+        width: 80%;
+    }
+    .obn{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .obn{
+        width: 200px;
+    }
+    .main-box{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 376px) {
+    .obn{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 345px) {
+    #mark-read{
+        width: 60px;
+    }
+}
+@media screen and (max-width: 319px) {
+    .obn{
+        width: 110px;
+    }
+    #mark-read{
+        width: 50px;
+    }
+}
